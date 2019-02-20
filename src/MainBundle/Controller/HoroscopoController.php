@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class HoroscopoController extends Controller
 {
 	/**
-     * @Route("/horoscopo", name="h-index")
+     * @Route("/", name="horoscopo_index")
      */
 	public function indexAction()
 	{
