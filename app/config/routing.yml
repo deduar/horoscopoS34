@@ -1,3 +1,7 @@
+main:
+    resource: '@MainBundle/Controller/'
+    type:     annotation
+
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
