@@ -12,6 +12,9 @@ class HoroscopoController extends Controller
      */
 	public function indexAction()
 	{
-		die("dos");
+		return $this->render('horoscopo/index.html.twig', [
+            'controller_name' => 'HoroscopoController',
+        ]);
+		//return $this->render('horoscopo/index.html.twig');
 	}
 }
