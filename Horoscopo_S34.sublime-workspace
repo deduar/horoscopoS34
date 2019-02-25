@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"u",
+				"ul\tTag"
+			],
+			[
 				"bt",
 				"btn-primary"
 			],
@@ -510,10 +514,6 @@
 			[
 				"margin-",
 				"margin-right"
-			],
-			[
-				"bord",
-				"border-radius"
 			]
 		]
 	},
@@ -532,16 +532,7 @@
 			"file": "src/MainBundle/Controller/HoroscopoController.php",
 			"settings":
 			{
-				"buffer_size": 806,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Resources/views/base.html.twig",
-			"settings":
-			{
-				"buffer_size": 3040,
+				"buffer_size": 1824,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -550,10 +541,9 @@
 			"file": "app/Resources/views/horoscopo/index.html.twig",
 			"settings":
 			{
-				"buffer_size": 5692,
+				"buffer_size": 6806,
 				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "index.html.twig"
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -632,11 +622,16 @@
 	],
 	"file_history":
 	[
+		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/forma.html.twig",
+		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/posiciones.html.twig",
+		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/sexo.html.twig",
+		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/clarividencia.html.twig",
+		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/base.html.twig",
+		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/signo.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/singin.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/singin.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/config/routing.yml",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/_index.html.twig",
-		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/base.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/vendor/composer/autoload_static.php",
 		"/home/deduar/Projects/Horoscopo_S34/app/config/services.yml",
 		"/home/deduar/Projects/Horoscopo_S34/composer.json",
@@ -754,16 +749,11 @@
 		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/experienceCategory_create.blade.php",
 		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/experienceCategory_edit.blade.php",
 		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/experiences.blade.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/users.blade.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/app/Http/Controllers/Admin/AdminController.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/app/Http/Controllers/Admin/ExperienceCategoryController.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/index.blade.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/resources/lang/es/admin.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/resources/lang/en/admin.php"
+		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/users.blade.php"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -777,6 +767,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"la",
+			".\n",
+			">\n",
 			"horos",
 			">\n",
 			"backgro",
@@ -901,10 +894,7 @@
 			"cancel",
 			"paypal",
 			"date",
-			"btn",
-			"60px",
-			"<div class=\"col-md-12\" style=\"padding: 0px;\">\n            <a href=\"{{route('experience_show',array('id'=>$exp->exp_id))}}\">\n              <img width=\"100%\" height=\"300px;\" src={{asset('uploads/exp/'.$exp->exp_photo)}} >\n            </a>\n          </div>",
-			")}}\"> "
+			"btn"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -957,7 +947,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -973,21 +963,21 @@
 						"selection":
 						[
 							[
-								1362,
-								1362
+								1405,
+								1405
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/Textile/Textile.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 245.0,
+						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -996,15 +986,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 806,
+						"buffer_size": 1824,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								698,
-								698
+								1669,
+								1669
 							]
 						],
 						"settings":
@@ -1012,69 +1002,38 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 54.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/Resources/views/base.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3040,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								215,
-								215
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 910.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "app/Resources/views/horoscopo/index.html.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5692,
+						"buffer_size": 6806,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								54,
-								54
+								866,
+								866
 							]
 						],
 						"settings":
 						{
-							"auto_name": "index.html.twig",
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 365.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
