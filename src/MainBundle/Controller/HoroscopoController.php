@@ -71,6 +71,51 @@ class HoroscopoController extends Controller
 	}
 
 	/**
+     * @Route("/posiciones/carretilla", name="carretilla")
+     */
+	public function carretillaAction()
+	{
+		return $this->render('horoscopo/carretilla.html.twig', 
+			['controller_name' => 'HoroscopoController',]);
+	}
+
+	/**
+     * @Route("/posiciones/fuerzag", name="fuerzag")
+     */
+	public function fuerzagAction()
+	{
+		return $this->render('horoscopo/fuerzag.html.twig', 
+			['controller_name' => 'HoroscopoController',]);
+	}
+
+	/**
+     * @Route("/posiciones/jinete", name="jinete")
+     */
+	public function jineteAction()
+	{
+		return $this->render('horoscopo/jinete.html.twig', 
+			['controller_name' => 'HoroscopoController',]);
+	}
+
+	/**
+     * @Route("/posiciones/tumbona", name="tumbona")
+     */
+	public function tumbonaAction()
+	{
+		return $this->render('horoscopo/tumbona.html.twig', 
+			['controller_name' => 'HoroscopoController',]);
+	}
+
+	/**
+     * @Route("/posiciones/desafio", name="desafio")
+     */
+	public function desafioAction()
+	{
+		return $this->render('horoscopo/desafio.html.twig', 
+			['controller_name' => 'HoroscopoController',]);
+	}
+
+	/**
      * @Route("/forma", name="forma")
      */
 	public function formaAction()

@@ -541,7 +541,16 @@
 			"file": "app/Resources/views/horoscopo/index.html.twig",
 			"settings":
 			{
-				"buffer_size": 6806,
+				"buffer_size": 5443,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Resources/views/base.html.twig",
+			"settings":
+			{
+				"buffer_size": 3016,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -617,11 +626,11 @@
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Resources",
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Resources/config",
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Resources/views",
-		"/home/deduar/Projects/Horoscopo_S34/web",
-		"/home/deduar/Projects/Horoscopo_S34/web/css"
+		"/home/deduar/Projects/Horoscopo_S34/web"
 	],
 	"file_history":
 	[
+		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/astrologica.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/forma.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/posiciones.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/sexo.html.twig",
@@ -748,12 +757,11 @@
 		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/currency.blade.php",
 		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/experienceCategory_create.blade.php",
 		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/experienceCategory_edit.blade.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/experiences.blade.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/users.blade.php"
+		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/experiences.blade.php"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -767,6 +775,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\n                ",
+			"\">\n",
+			"%}\n",
 			"la",
 			".\n",
 			">\n",
@@ -891,10 +902,7 @@
 			"pagi",
 			"3",
 			"paginate",
-			"cancel",
-			"paypal",
-			"date",
-			"btn"
+			"cancel"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -947,7 +955,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -963,8 +971,8 @@
 						"selection":
 						[
 							[
-								1405,
-								1405
+								1687,
+								1687
 							]
 						],
 						"settings":
@@ -974,10 +982,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 378.0,
+						"translation.y": 399.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1002,7 +1010,7 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 910.0,
+						"translation.y": 57.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -1014,15 +1022,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6806,
+						"buffer_size": 5443,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								866,
-								866
+								5368,
+								5368
 							]
 						],
 						"settings":
@@ -1030,7 +1038,37 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 365.0,
+						"translation.y": 1425.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Resources/views/base.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3016,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1166,
+								1166
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 716.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1041,7 +1079,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -1090,7 +1128,7 @@
 	"project": "Horoscopo_S34.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Horoscopo{% endblock %}
+
+
+{% block body %}
+
+<section class="showcase">
+    <div class="container-fluid p-0">
+      <div class="row">
+      <div class="col-lg-10 col-sm-12">
+        <div class="row">
+            
+            <img src="{{ asset('img/Jinete.jpg') }}" height="100%" width="100%" alt="La Jinete">
+
+        </div>
+      </div>
+  	</div>
+    <div class="row">
+        <div class="col text-center">
+            <a download="La Jinete.jpg" href="{{ asset('img/') }}" title="La Carretilla">
+                <div class="btn btn-primary"><h2>Descargar</h2></div>
+            </a>
+        </div>
+    </div>
+    <br>
+
+</section>
+
+
+{% endblock %}
