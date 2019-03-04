@@ -52,24 +52,55 @@
   </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="{{url('astrologica')}}">Horóscopo-Astrológica<span class="sr-only">(current)</span></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Horóscopo-Astrológica
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{url('decanatos')}}">Los Decanatos</a>
+            <a class="dropdown-item" href="{{url('calcula_decanatos')}}">Calcula tu Decanato</a>
+            <a class="dropdown-item" href="{{url('guia_astrologica')}}">Pequeña Guía Astrológica</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{url('signo')}}">Tu Signo<span class="sr-only">(current)</span></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tu Signo
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{url('signo')}}">Los signos del Zodiaco</a>
+            <a class="dropdown-item" href="{{url('caracteristica_signo')}}">Características de los Signos Zodiacales</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{url('clarividencia')}}">Clarividencia<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{url('sexo')}}">Amor y Sexo<span class="sr-only">(current)</span></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Amor y Sexo
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{url('puntog')}}">El Punto G</a>
+            <a class="dropdown-item" href="{{url('kamasutra')}}">Kamasutra</a>
+            <a class="dropdown-item" href="{{url('papel_mujer')}}">El Papel de la Mujer</a>
+            <a class="dropdown-item" href="{{url('besos')}}">Tipos de Besos</a>
+            <a class="dropdown-item" href="{{url('posiciones')}}">Las posiciones</a>
+            <a class="dropdown-item" href="{{url('sexo')}}">Sexo Tántrico</a>
+          </div>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" href="{{url('posiciones')}}">Las Posiciones<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{url('forma')}}">En Forma<span class="sr-only">(current)</span></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            En Forma
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{url('meditacion')}}">La meditación</a>
+            <a class="dropdown-item" href="{{url('relajacion')}}">La relajación</a>
+          </div>
         </li>
+        
       </ul>
     </div>
   </nav>
