@@ -527,24 +527,6 @@
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
-		},
-		{
-			"file": "app/Resources/views/horoscopo/guia_astrologica.html.twig",
-			"settings":
-			{
-				"buffer_size": 12244,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Resources/views/horoscopo/decanatos.html.twig",
-			"settings":
-			{
-				"buffer_size": 8684,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
 		}
 	],
 	"build_system": "",
@@ -616,16 +598,18 @@
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Controller",
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Resources",
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Resources/config",
-		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Resources/views"
+		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Resources/views",
+		"/home/deduar/Projects/Horoscopo_S34/web",
+		"/home/deduar/Projects/Horoscopo_S34/web/img"
 	],
 	"file_history":
 	[
-		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/decanatos.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/base.html.twig",
+		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/index.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/guia_astrologica.html.twig",
+		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/decanatos.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/signo.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Controller/HoroscopoController.php",
-		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/index.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/relajacion.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/besos.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/posiciones.html.twig",
@@ -751,7 +735,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -765,6 +749,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"img",
 			"                </",
 			"url",
 			" }}\"",
@@ -891,8 +876,7 @@
 			"btn",
 			"contac",
 			"id",
-			"user",
-			"buton"
+			"user"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -961,8 +945,8 @@
 						"selection":
 						[
 							[
-								973,
-								973
+								1126,
+								1126
 							]
 						],
 						"settings":
@@ -976,66 +960,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/Resources/views/horoscopo/guia_astrologica.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12244,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10777,
-								10777
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4884.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/Resources/views/horoscopo/decanatos.html.twig",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 8684,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2804,
-								2804
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1140.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
