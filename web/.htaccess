@@ -21,6 +21,7 @@ DirectoryIndex app.php
 
 
     RewriteEngine On
+    Require all granted
     RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
     RewriteRule ^(.*) - [E=BASE:%1]
 

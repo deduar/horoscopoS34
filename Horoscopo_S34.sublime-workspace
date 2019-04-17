@@ -604,10 +604,10 @@
 	],
 	"file_history":
 	[
-		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/base.html.twig",
-		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/index.html.twig",
-		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/guia_astrologica.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/decanatos.html.twig",
+		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/index.html.twig",
+		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/base.html.twig",
+		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/guia_astrologica.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/signo.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Controller/HoroscopoController.php",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/relajacion.html.twig",
@@ -735,7 +735,7 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -945,8 +945,8 @@
 						"selection":
 						[
 							[
-								1126,
-								1126
+								1288,
+								1288
 							]
 						],
 						"settings":
