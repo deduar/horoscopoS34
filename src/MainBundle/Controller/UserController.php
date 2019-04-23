@@ -44,13 +44,29 @@ class UserController extends FOSRestController
 	{
 		$data = new User;
 	   	$name = $request->get('name');
-	   	$role = $request->get('role');
-	 	if(empty($name) || empty($role))
+	   	$apellido = $request->get('apellido');
+	   	$idmsisdn = $request->get('idmsisdn');
+	   	$idprovedor = $request->get('idprovedor');
+	   	$msisdn = $request->get('msisdn');
+	   	$sexo = $request->get('sexo');
+	   	$fechanacimiento = $request->get('fechanacimiento');
+	   	$fechaingreso = $request->get('fechaingreso');
+	   	$status = $request->get('status');
+	   	$statuspay = $request->get('statuspay');
+	 	if(empty($idmsisdn) )
 	 	{
-	   		return new View("NULL VALUES ARE NOT ALLOWED", Response::HTTP_NOT_ACCEPTABLE); 
+	   		return new View("NULL VALUES ARE NOT ALLOWED on id_ms_isdn", Response::HTTP_NOT_ACCEPTABLE); 
 	 	} 
 	  	$data->setName($name);
-	  	$data->setRole($role);
+	  	$data->setApellido($apellido);
+	  	$data->setIdmsisdn($idmsisdn);
+	  	$data->setIdprovedor($idprovedor);
+	  	$data->setMsisdn($msisdn);
+	  	$data->setSexo($sexo);
+	  	$data->setFechanacimiento($fechanacimiento);
+	  	$data->setFechaingreso($fechaingreso);
+	  	$data->setStatus($status);
+	  	$data->setStatuspay($statuspay);
 	  	$em = $this->getDoctrine()->getManager();
 	  	$em->persist($data);
 	  	$em->flush();
@@ -64,29 +80,29 @@ class UserController extends FOSRestController
 	{ 
 	 	$data = new User;
 		$name = $request->get('name');
-	 	$role = $request->get('role');
+	 	$apellido = $request->get('apellido');
 	 	$sn = $this->getDoctrine()->getManager();
 	 	$user = $this->getDoctrine()->getRepository('MainBundle:User')->find($id);
 		if (empty($user)) {
 	   		return new View("user not found", Response::HTTP_NOT_FOUND);
 	 	} 
-		elseif(!empty($name) && !empty($role)){
+		elseif(!empty($name) && !empty($apellido)){
 	   		$user->setName($name);
-	   		$user->setRole($role);
+	   		$user->setApellido($apellido);
 	   		$sn->flush();
 	   		return new View("User Updated Successfully", Response::HTTP_OK);
 	 	}
-		elseif(empty($name) && !empty($role)){
-	   		$user->setRole($role);
+		elseif(empty($name) && !empty($apellido)){
+	   		$user->setApellido($apellido);
 	   		$sn->flush();
-	   		return new View("role Updated Successfully", Response::HTTP_OK);
+	   		return new View("apellido Updated Successfully", Response::HTTP_OK);
 		}
-		elseif(!empty($name) && empty($role)){
+		elseif(!empty($name) && empty($apellido)){
 	 		$user->setName($name);
 	 		$sn->flush();
 	 		return new View("User Name Updated Successfully", Response::HTTP_OK); 
 		}
-		else return new View("User name or role cannot be empty", Response::HTTP_NOT_ACCEPTABLE); 
+		else return new View("User name or apellido cannot be empty", Response::HTTP_NOT_ACCEPTABLE); 
 	}
 
 	/**

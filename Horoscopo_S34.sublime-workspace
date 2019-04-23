@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"stat",
+				"statuspay"
+			],
+			[
+				"id_",
+				"id_ms_isdn"
+			],
+			[
 				"th",
 				"th\tTag"
 			],
@@ -506,14 +514,6 @@
 			[
 				"Con",
 				"config"
-			],
-			[
-				"login",
-				"login_box"
-			],
-			[
-				"file",
-				"filename"
 			]
 		]
 	},
@@ -523,7 +523,25 @@
 			"file": "web/.htaccess",
 			"settings":
 			{
-				"buffer_size": 2125,
+				"buffer_size": 2149,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/MainBundle/Controller/UserController.php",
+			"settings":
+			{
+				"buffer_size": 3768,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/MainBundle/Entity/User.php",
+			"settings":
+			{
+				"buffer_size": 5413,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -589,21 +607,23 @@
 	[
 		"/home/deduar/Projects/Horoscopo_S34",
 		"/home/deduar/Projects/Horoscopo_S34/app",
-		"/home/deduar/Projects/Horoscopo_S34/app/Resources",
-		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views",
-		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/default",
-		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo",
+		"/home/deduar/Projects/Horoscopo_S34/app/config",
 		"/home/deduar/Projects/Horoscopo_S34/src",
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle",
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Controller",
-		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Resources",
-		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Resources/config",
-		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Resources/views",
-		"/home/deduar/Projects/Horoscopo_S34/web",
-		"/home/deduar/Projects/Horoscopo_S34/web/img"
+		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Entity",
+		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Repository"
 	],
 	"file_history":
 	[
+		"/home/deduar/Projects/Horoscopo_S34/app/config/parameters.yml",
+		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Entity/User.php",
+		"/home/deduar/Projects/Horoscopo_S34/app/config/config.yml",
+		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Repository/UserRepository.php",
+		"/home/deduar/Projects/Horoscopo_S34/web/.htaccess_new",
+		"/home/deduar/Projects/Horoscopo_S34/composer.json",
+		"/home/deduar/Projects/Horoscopo_S34/app/AppKernel.php",
+		"/home/deduar/Projects/Horoscopo_S34/web/.htaccess",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/decanatos.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/index.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/base.html.twig",
@@ -625,22 +645,18 @@
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/sexo.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/clarividencia.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/astrologica.html.twig",
-		"/home/deduar/Projects/Horoscopo_S34/app/config/config.yml",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/singin.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/singin.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/app/config/routing.yml",
 		"/home/deduar/Projects/Horoscopo_S34/app/Resources/views/horoscopo/_index.html.twig",
 		"/home/deduar/Projects/Horoscopo_S34/vendor/composer/autoload_static.php",
 		"/home/deduar/Projects/Horoscopo_S34/app/config/services.yml",
-		"/home/deduar/Projects/Horoscopo_S34/composer.json",
-		"/home/deduar/Projects/Horoscopo_S34/app/AppKernel.php",
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/MainBundle.php",
 		"/home/deduar/Projects/Horoscopo_S34/web/app_dev.php",
 		"/home/deduar/Projects/Horoscopo_S34/app/.htaccess",
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Resources/config/routing.yml",
 		"/home/deduar/Projects/Horoscopo_S34/src/AppBundle/AppBundle.php",
 		"/home/deduar/Projects/Horoscopo_S34/src/AppBundle/Controller/DefaultController.php",
-		"/home/deduar/Projects/Horoscopo_S34/web/.htaccess",
 		"/home/deduar/Projects/Horoscopo_S34/src/.htaccess",
 		"/home/deduar/Projects/Horoscopo/.env",
 		"/tmp/feminatarot.com/index.html",
@@ -727,15 +743,11 @@
 		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/reservation/confirm.blade.php",
 		"/home/deduar/Projects/Coexperiences_v-2.0/app/Libraries/ConsumerPaypal.php",
 		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/reservation/index.blade.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/reservation.blade.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/resources/lang/es/reservation.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/resources/lang/en/reservation.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/app/Http/Controllers/Admin/ReservationController.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/app/Http/Controllers/Experiences/ExperiencesController.php"
+		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/reservation.blade.php"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -749,6 +761,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"idprovedor",
+			"idmsisdn",
+			"isdn",
+			"id_ms_isd",
+			"string",
+			"apellido",
+			"AppBundle",
+			"app",
+			"true",
+			"AppBundle",
 			"img",
 			"                </",
 			"url",
@@ -866,17 +888,7 @@
 			"Waiting",
 			"waitin",
 			"Canceled",
-			"Cance",
-			"Rejected(",
-			"wait",
-			"btn",
-			"',\n",
-			"reject",
-			"rejected(",
-			"btn",
-			"contac",
-			"id",
-			"user"
+			"Cance"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -884,6 +896,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"MainBundle",
 			":#00b1e5",
 			"asterisk",
 			"$us_prof",
@@ -929,7 +942,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -938,28 +951,87 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2125,
+						"buffer_size": 2149,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1288,
-								1288
+								1384,
+								1384
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Textile/Textile.sublime-syntax",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 114.0,
+						"translation.y": 228.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/MainBundle/Controller/UserController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3768,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2096,
+								2096
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 845.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/MainBundle/Entity/User.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5413,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5402,
+								5402
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5687.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -967,7 +1039,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -1016,7 +1088,7 @@
 	"project": "Horoscopo_S34.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
