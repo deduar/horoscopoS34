@@ -60,7 +60,8 @@ class UserController extends FOSRestController
 			  	$em->flush();
 			   	return new View("User Added Successfully", Response::HTTP_OK);
 	 		} else {
-	 			$this->updateAction($user->getId(), $request);
+	 			$this->updateAction($user[0]->getId(), $request);
+	 			return new View("User Updated Successfully !", Response::HTTP_OK);
 	 		}
 	 	}
 	}
