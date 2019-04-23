@@ -42,35 +42,27 @@ class UserController extends FOSRestController
 	 */
 	public function postAction(Request $request)
 	{
-		$data = new User;
-	   	$name = $request->get('name');
-	   	$apellido = $request->get('apellido');
-	   	$idmsisdn = $request->get('idmsisdn');
-	   	$idprovedor = $request->get('idprovedor');
-	   	$msisdn = $request->get('msisdn');
-	   	$sexo = $request->get('sexo');
-	   	$fechanacimiento = $request->get('fechanacimiento');
-	   	$fechaingreso = $request->get('fechaingreso');
-	   	$status = $request->get('status');
-	   	$statuspay = $request->get('statuspay');
+		$idmsisdn = $request->get('idmsisdn');
 	 	if(empty($idmsisdn) )
 	 	{
 	   		return new View("NULL VALUES ARE NOT ALLOWED on id_ms_isdn", Response::HTTP_NOT_ACCEPTABLE); 
-	 	} 
-	  	$data->setName($name);
-	  	$data->setApellido($apellido);
-	  	$data->setIdmsisdn($idmsisdn);
-	  	$data->setIdprovedor($idprovedor);
-	  	$data->setMsisdn($msisdn);
-	  	$data->setSexo($sexo);
-	  	$data->setFechanacimiento($fechanacimiento);
-	  	$data->setFechaingreso($fechaingreso);
-	  	$data->setStatus($status);
-	  	$data->setStatuspay($statuspay);
-	  	$em = $this->getDoctrine()->getManager();
-	  	$em->persist($data);
-	  	$em->flush();
-	   	return new View("User Added Successfully", Response::HTTP_OK);
+	 	} else {
+	 		$em = $this->getDoctrine()->getManager();
+	 		$newUser = new User;
+		   	$userInput = $request->query->all();
+		   	foreach ($userInput as $key => $value) {
+		   		$k = "set".ucfirst($key);
+		   		$newUser->$k($value);
+		   	}
+	 		$user = $this->getDoctrine()->getRepository('MainBundle:User')->findByIdmsisdn($idmsisdn);
+	 		if (sizeof($user) == 0) {
+			  	$em->persist($newUser);
+			  	$em->flush();
+			   	return new View("User Added Successfully", Response::HTTP_OK);
+	 		} else {
+	 			$this->updateAction($user->getId(), $request);
+	 		}
+	 	}
 	}
 
 	/**
@@ -78,31 +70,15 @@ class UserController extends FOSRestController
 	 */
 	public function updateAction($id,Request $request)
 	{ 
-	 	$data = new User;
-		$name = $request->get('name');
-	 	$apellido = $request->get('apellido');
-	 	$sn = $this->getDoctrine()->getManager();
-	 	$user = $this->getDoctrine()->getRepository('MainBundle:User')->find($id);
-		if (empty($user)) {
-	   		return new View("user not found", Response::HTTP_NOT_FOUND);
-	 	} 
-		elseif(!empty($name) && !empty($apellido)){
-	   		$user->setName($name);
-	   		$user->setApellido($apellido);
-	   		$sn->flush();
-	   		return new View("User Updated Successfully", Response::HTTP_OK);
-	 	}
-		elseif(empty($name) && !empty($apellido)){
-	   		$user->setApellido($apellido);
-	   		$sn->flush();
-	   		return new View("apellido Updated Successfully", Response::HTTP_OK);
-		}
-		elseif(!empty($name) && empty($apellido)){
-	 		$user->setName($name);
-	 		$sn->flush();
-	 		return new View("User Name Updated Successfully", Response::HTTP_OK); 
-		}
-		else return new View("User name or apellido cannot be empty", Response::HTTP_NOT_ACCEPTABLE); 
+		$sn = $this->getDoctrine()->getManager();
+		$user = $this->getDoctrine()->getRepository('MainBundle:User')->find($id);
+		$userInput = $request->query->all();
+		foreach ($userInput as $key => $value) {
+	   		$k = "set".ucfirst($key);
+	   		$user->$k($value);
+	   	}
+	   	$sn->flush();
+	   	return new View("User Updated Successfully", Response::HTTP_OK);
 	}
 
 	/**
