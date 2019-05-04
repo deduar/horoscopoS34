@@ -58,10 +58,15 @@ class UserController extends FOSRestController
 	 		if (sizeof($user) == 0) {
 			  	$em->persist($newUser);
 			  	$em->flush();
-			   	return new View("User Added Successfully", Response::HTTP_OK);
+			   	//return new View("User Added Successfully", Response::HTTP_OK);
 	 		} else {
 	 			$this->updateAction($user[0]->getId(), $request);
-	 			return new View("User Updated Successfully !", Response::HTTP_OK);
+	 			//return new View("User Updated Successfully !", Response::HTTP_OK);
+	 		}
+	 		if (($user[0]->getStatus() == '1') && ($user[0]->getStatuspay() == '1')){
+	 			return $this->redirect($this->generateUrl('index'));
+	 		} else {
+	 			return new View("Unathorized user by Status or StatusPay", Response::HTTP_OK);
 	 		}
 	 	}
 	}

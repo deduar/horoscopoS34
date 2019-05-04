@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"Sex",
+				"Sexo_Female"
+			],
+			[
+				"Se",
+				"Sexo_Male"
+			],
+			[
+				"new",
+				"newUser"
+			],
+			[
+				"ne",
+				"newUser"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
 				"stat",
 				"statuspay"
 			],
@@ -170,10 +190,6 @@
 			[
 				"b",
 				"btn-primary"
-			],
-			[
-				"for",
-				"date_format"
 			],
 			[
 				"font",
@@ -448,10 +464,6 @@
 				"parse"
 			],
 			[
-				"Se",
-				"Session"
-			],
-			[
 				"boo",
 				"boolean"
 			],
@@ -502,18 +514,6 @@
 			[
 				"user_",
 				"user_id"
-			],
-			[
-				"myexp",
-				"myexps"
-			],
-			[
-				"wi",
-				"width\tproperty"
-			],
-			[
-				"Con",
-				"config"
 			]
 		]
 	},
@@ -532,7 +532,7 @@
 			"file": "src/MainBundle/Controller/UserController.php",
 			"settings":
 			{
-				"buffer_size": 3768,
+				"buffer_size": 2854,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -541,7 +541,7 @@
 			"file": "src/MainBundle/Entity/User.php",
 			"settings":
 			{
-				"buffer_size": 5413,
+				"buffer_size": 5435,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -616,9 +616,11 @@
 	],
 	"file_history":
 	[
+		"/home/deduar/Projects/Horoscopo_S34/app/config/config.yml",
+		"/home/deduar/Projects/Horoscopo_S34/var/bootstrap.php.cache",
+		"/home/deduar/Projects/Horoscopo_S34/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php",
 		"/home/deduar/Projects/Horoscopo_S34/app/config/parameters.yml",
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Entity/User.php",
-		"/home/deduar/Projects/Horoscopo_S34/app/config/config.yml",
 		"/home/deduar/Projects/Horoscopo_S34/src/MainBundle/Repository/UserRepository.php",
 		"/home/deduar/Projects/Horoscopo_S34/web/.htaccess_new",
 		"/home/deduar/Projects/Horoscopo_S34/composer.json",
@@ -741,13 +743,11 @@
 		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/reservation/waiting.blade.php",
 		"/home/deduar/Projects/Coexperiences_v-2.0/app/Http/Controllers/Reservation/ReservationController.php",
 		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/reservation/confirm.blade.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/app/Libraries/ConsumerPaypal.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/reservation/index.blade.php",
-		"/home/deduar/Projects/Coexperiences_v-2.0/resources/views/admin/reservation.blade.php"
+		"/home/deduar/Projects/Coexperiences_v-2.0/app/Libraries/ConsumerPaypal.php"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -761,6 +761,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"getNombre(",
+			"Update",
+			"name",
+			"Updated",
+			"nombre",
+			"name",
+			"$name",
+			"name",
+			"function get(",
+			"function all(",
+			"fucntion all(",
+			"all(",
+			"get(",
+			"get()",
 			"idprovedor",
 			"idmsisdn",
 			"isdn",
@@ -874,21 +888,7 @@
 			"exper",
 			"admin",
 			"paypal",
-			"paid",
-			"PayPal",
-			"paid",
-			"paypal",
-			"pay",
-			"\t\n",
-			"scope",
-			"paid",
-			"button",
-			"defered",
-			"PayTransfer(",
-			"Waiting",
-			"waitin",
-			"Canceled",
-			"Cance"
+			"paid"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -958,8 +958,8 @@
 						"selection":
 						[
 							[
-								1384,
-								1384
+								1214,
+								1214
 							]
 						],
 						"settings":
@@ -981,15 +981,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3768,
+						"buffer_size": 2854,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2096,
-								2096
+								1954,
+								1954
 							]
 						],
 						"settings":
@@ -998,7 +998,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 845.0,
+						"translation.y": 709.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1010,15 +1010,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5413,
+						"buffer_size": 5435,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5402,
-								5402
+								1738,
+								1738
 							]
 						],
 						"settings":
@@ -1028,7 +1028,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5687.0,
+						"translation.y": 1321.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1039,7 +1039,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -1088,7 +1088,7 @@
 	"project": "Horoscopo_S34.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
