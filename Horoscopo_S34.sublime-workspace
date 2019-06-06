@@ -532,7 +532,7 @@
 			"file": "src/MainBundle/Controller/UserController.php",
 			"settings":
 			{
-				"buffer_size": 2854,
+				"buffer_size": 3097,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -747,7 +747,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -981,15 +981,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2854,
+						"buffer_size": 3097,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1954,
-								1954
+								942,
+								942
 							]
 						],
 						"settings":
@@ -998,7 +998,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 709.0,
+						"translation.y": 510.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1017,8 +1017,8 @@
 						"selection":
 						[
 							[
-								1738,
-								1738
+								5384,
+								5384
 							]
 						],
 						"settings":
@@ -1028,7 +1028,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1321.0,
+						"translation.y": 5114.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
