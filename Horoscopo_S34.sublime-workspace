@@ -533,6 +533,7 @@
 			"settings":
 			{
 				"buffer_size": 349,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -769,6 +770,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"root",
+			"prod",
 			"getNombre(",
 			"Update",
 			"name",
@@ -894,9 +897,7 @@
 			"paid",
 			"index",
 			"exper",
-			"admin",
-			"paypal",
-			"paid"
+			"admin"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -966,8 +967,8 @@
 						"selection":
 						[
 							[
-								946,
-								946
+								1312,
+								1312
 							]
 						],
 						"settings":
@@ -986,7 +987,7 @@
 				{
 					"buffer": 1,
 					"file": "app/config/parameters.yml",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 349,
@@ -996,8 +997,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								203,
+								203
 							]
 						],
 						"settings":
@@ -1026,8 +1027,8 @@
 						"selection":
 						[
 							[
-								782,
-								782
+								1101,
+								1101
 							]
 						],
 						"settings":
@@ -1066,7 +1067,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1103.0,
+						"translation.y": 576.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,

@@ -4,16 +4,22 @@ namespace MainBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 class HoroscopoController extends Controller
 {
 	/**
      * @Route("/", name="index")
      */
-	public function indexAction()
+	public function indexAction(Request $request)
 	{
-		return $this->render('horoscopo/index.html.twig', 
+		$params = $request->query->all();
+		if (empty($params)) {
+			return $this->redirect('http://tarotayuda.com');
+		} else {
+			return $this->render('horoscopo/index.html.twig', 
 			['controller_name' => 'HoroscopoController',]);
+		}
 	}
 
 	/**
