@@ -59,13 +59,12 @@ class UserController extends FOSRestController
 			  	$em->persist($newUser);
 			  	$em->flush();
 			  	if (($newUser->getStatus() == '1') && ($newUser->getStatuspay() == '1')){
-			  		return $this->redirect($this->generateUrl('index'));
+			  		return $this->redirect($this->generateUrl('index',array('idmsisdn'=>$idmsisdn)));
 			  	}
-			   	//return new View("User Added Successfully", Response::HTTP_OK);
 	 		} else {
 	 			$this->updateAction($user[0]->getId(), $request);
 	 			if (($user[0]->getStatus() == '1') && ($user[0]->getStatuspay() == '1')){
-	 				return $this->redirect($this->generateUrl('index'));
+	 				return $this->redirect($this->generateUrl('index',array('idmsisdn'=>$idmsisdn)));
 	 			}
 	 			//return new View("User Updated Successfully !", Response::HTTP_OK);
 	 		}
