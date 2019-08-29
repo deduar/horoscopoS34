@@ -91,6 +91,20 @@ class User
      */
     private $statuspay;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="smscid", type="string", length=255)
+     */
+    private $smscid;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="shortcode ", type="string", length=255)
+     */
+    private $shortcode ;
+
 
     /**
      * Get id
@@ -340,6 +354,54 @@ class User
     public function getStatuspay()
     {
         return $this->statuspay;
+    }
+
+    /**
+     * Set smscid
+     *
+     * @param string $smscid
+     *
+     * @return User
+     */
+    public function setSmscid($smscid)
+    {
+        $this->smscid = $smscid;
+
+        return $this;
+    }
+
+    /**
+     * Get smscid
+     *
+     * @return string
+     */
+    public function getSmscid()
+    {
+        return $this->smscid;
+    }
+
+    /**
+     * Set shortcode 
+     *
+     * @param string $shortcode 
+     *
+     * @return User
+     */
+    public function setShortcode ($shortcode)
+    {
+        $this->shortcode = $shortcode;
+
+        return $this;
+    }
+
+    /**
+     * Get shortcode 
+     *
+     * @return string
+     */
+    public function getShortcode  ()
+    {
+        return $this->shortcode ;
     }
 }
 

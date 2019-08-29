@@ -18,7 +18,7 @@ class HoroscopoController extends Controller
 			return $this->redirect('http://tarotayuda.com');
 		} else {
 			return $this->render('horoscopo/index.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+				['controller_name' => 'HoroscopoController',]);
 		}
 	}
 
