@@ -13,7 +13,8 @@ class HoroscopoController extends Controller
      */
 	public function indexAction(Request $request)
 	{
-		var_dump($request->request->all());
+		var_dump($request->query->get('idmsisdn'));
+
 		die();
 		return $this->render('horoscopo/index.html.twig', 
 				['controller_name' => 'HoroscopoController',]);
