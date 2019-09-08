@@ -16,22 +16,11 @@ class HoroscopoController extends Controller
 		$params = $request->request->all();
 		var_dump(sizeof($params));
 		if (sizeof($params) > 0){
-			echo "content";
-		} else {
-			echo "landing";
-		}
-		die();
-		return $this->render('horoscopo/index.html.twig', 
-				['controller_name' => 'HoroscopoController',]);
-		/*
-		$params = $request->query->all();
-		if (empty($params)) {
-			return $this->redirect('http://tarotayuda.com');
-		} else {
 			return $this->render('horoscopo/index.html.twig', 
 				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
 		}
-		*/
 	}
 
 	/**
