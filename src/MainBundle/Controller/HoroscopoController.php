@@ -18,10 +18,10 @@ class HoroscopoController extends Controller
 		//$session->start();
 		//$params = $request->query->all();
 		if ($this->get('session')->isStarted()) {
-			return $this->redirect('http://tarotayuda.com');
-		} else {
 			return $this->render('horoscopo/index.html.twig', 
 				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
 		}
 	}
 
