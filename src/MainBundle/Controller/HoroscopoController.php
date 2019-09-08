@@ -5,7 +5,6 @@ namespace MainBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Session\Session;
 
 class HoroscopoController extends Controller
 {
@@ -14,15 +13,17 @@ class HoroscopoController extends Controller
      */
 	public function indexAction(Request $request)
 	{
-		//$session = new Session();
-		//$session->start();
-		//$params = $request->query->all();
-		if ($this->get('session')->isStarted()) {
+		return $this->render('horoscopo/index.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		/*
+		$params = $request->query->all();
+		if (empty($params)) {
+			return $this->redirect('http://tarotayuda.com');
+		} else {
 			return $this->render('horoscopo/index.html.twig', 
 				['controller_name' => 'HoroscopoController',]);
-		} else {
-			return $this->redirect('http://tarotayuda.com');
 		}
+		*/
 	}
 
 	/**
