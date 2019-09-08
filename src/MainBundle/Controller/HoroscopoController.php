@@ -14,15 +14,13 @@ class HoroscopoController extends Controller
 	public function indexAction(Request $request)
 	{
 		$params = $request->request->all();
-		var_dump($params);
-		var_dump($params['idmsisdn']);
 
 		$params = $request->query->all();
-		if (empty($params['idmsisdn'] != NULL)) {
+		if (empty($params['idmsisdn'] == NULL)) {
+			return $this->redirect('http://tarotayuda.com');
+		} else {
 			return $this->render('horoscopo/index.html.twig', 
 				['controller_name' => 'HoroscopoController',]);
-		} else {
-			return $this->redirect('http://tarotayuda.com');
 		}
 	}
 
