@@ -15,6 +15,8 @@ class HoroscopoController extends Controller
 	{
 		$params = $request->request->all();
 		var_dump($params);
+		var_dump($params['idmsisdn']);
+		
 		die();
 		return $this->render('horoscopo/index.html.twig', 
 				['controller_name' => 'HoroscopoController',]);
