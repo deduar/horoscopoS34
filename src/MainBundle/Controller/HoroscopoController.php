@@ -34,172 +34,267 @@ class HoroscopoController extends Controller
 	/**
      * @Route("/decanatos", name="decanatos")
      */
-	public function decanatosAction()
+	public function decanatosAction(Request $request)
 	{
-		return $this->render('horoscopo/decanatos.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/decanatos.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+			} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/calcula_decanatos", name="calcula_decanatos")
      */
-	public function calcula_decanatosAction()
+	public function calcula_decanatosAction(Request $request)
 	{
-		return $this->render('horoscopo/calcula_decanatos.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/calcula_decanatos.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+			} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/guia_astrologica", name="guia_astrologica")
      */
-	public function guia_astrologicaAction()
+	public function guia_astrologicaAction(Request $request)
 	{
-		return $this->render('horoscopo/guia_astrologica.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/guia_astrologica.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/signo", name="signo")
      */
-	public function signoAction()
+	public function signoAction(Request $request)
 	{
-		return $this->render('horoscopo/signo.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/signo.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/caracteristica_signo", name="caracteristica_signo")
      */
-	public function caracteristicasignoAction()
+	public function caracteristicasignoAction(Request $request)
 	{
-		return $this->render('horoscopo/caracteristica_signo.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/caracteristica_signo.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}	
 	}
 
 	/**
      * @Route("/clarividencia", name="clarividencia")
      */
-	public function clarividenciaAction()
+	public function clarividenciaAction(Request $request)
 	{
-		return $this->render('horoscopo/clarividencia.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/clarividencia.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}	
 	}
 
 	/**
      * @Route("/puntog", name="puntog")
      */
-	public function puntogAction()
+	public function puntogAction(Request $request)
 	{
-		return $this->render('horoscopo/puntog.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/puntog.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}	
 	}
 
 	/**
      * @Route("/kamasutra", name="kamasutra")
      */
-	public function kamasutraAction()
+	public function kamasutraAction(Request $request)
 	{
-		return $this->render('horoscopo/kamasutra.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/kamasutra.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+			} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/papel_mujer", name="papel_mujer")
      */
-	public function papel_mujerAction()
+	public function papel_mujerAction(Request $request)
 	{
-		return $this->render('horoscopo/papel_mujer.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/papel_mujer.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/besos", name="besos")
      */
-	public function besosAction()
+	public function besosAction(Request $request)
 	{
-		return $this->render('horoscopo/besos.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/besos.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/posiciones", name="posiciones")
      */
-	public function posicionesAction()
+	public function posicionesAction(Request $request)
 	{
-		return $this->render('horoscopo/posiciones.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/posiciones.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/sexo", name="sexo")
      */
-	public function sexoAction()
+	public function sexoAction(Request $request)
 	{
-		return $this->render('horoscopo/sexo.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/sexo.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/posiciones/carretilla", name="carretilla")
      */
-	public function carretillaAction()
+	public function carretillaAction(Request $request)
 	{
-		return $this->render('horoscopo/carretilla.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/carretilla.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/posiciones/fuerzag", name="fuerzag")
      */
-	public function fuerzagAction()
+	public function fuerzagAction(Request $request)
 	{
-		return $this->render('horoscopo/fuerzag.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/fuerzag.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/posiciones/jinete", name="jinete")
      */
-	public function jineteAction()
+	public function jineteAction(Request $request)
 	{
-		return $this->render('horoscopo/jinete.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/jinete.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/posiciones/tumbona", name="tumbona")
      */
-	public function tumbonaAction()
+	public function tumbonaAction(Request $request)
 	{
-		return $this->render('horoscopo/tumbona.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/tumbona.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/posiciones/desafio", name="desafio")
      */
-	public function desafioAction()
+	public function desafioAction(Request $request)
 	{
-		return $this->render('horoscopo/desafio.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/desafio.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/meditacion", name="meditacion")
      */
-	public function meditacionAction()
+	public function meditacionAction(Request $request)
 	{
-		return $this->render('horoscopo/meditacion.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/meditacion.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 	/**
      * @Route("/relajacion", name="relajacion")
      */
-	public function relajacionAction()
+	public function relajacionAction(Request $request)
 	{
-		return $this->render('horoscopo/relajacion.html.twig', 
-			['controller_name' => 'HoroscopoController',]);
+		$params = $request->request->all();
+		if (sizeof($params) > 0){
+			return $this->render('horoscopo/relajacion.html.twig', 
+				['controller_name' => 'HoroscopoController',]);
+		} else {
+			return $this->redirect('http://tarotayuda.com');
+		}
 	}
 
 }

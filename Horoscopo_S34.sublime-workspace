@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"qu",
+				"query-"
+			],
+			[
 				"Sex",
 				"Sexo_Female"
 			],
@@ -510,10 +514,6 @@
 			[
 				"my",
 				"myreservations"
-			],
-			[
-				"user_",
-				"user_id"
 			]
 		]
 	},
@@ -541,7 +541,7 @@
 			"file": "src/MainBundle/Controller/HoroscopoController.php",
 			"settings":
 			{
-				"buffer_size": 4854,
+				"buffer_size": 4860,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -765,7 +765,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -960,7 +960,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1029,15 +1029,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4854,
+						"buffer_size": 4860,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								530,
-								530
+								386,
+								386
 							]
 						],
 						"settings":
@@ -1045,10 +1045,10 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 74.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1074,10 +1074,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 646.0,
+						"translation.y": 256.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1107,7 +1107,7 @@
 						"translation.y": 6456.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
